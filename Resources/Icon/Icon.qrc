@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/">
+    <file>About.png</file>
+    <file>AdministrativeDistrict.png</file>
+    <file>DefaultUsers.png</file>
+    <file>Error.png</file>
+    <file>FeedBack.png</file>
+    <file>IPLocation.png</file>
+    <file>logo.png</file>
+    <file>Maps.png</file>
+    <file>RoutePlanningLogo.png</file>
+    <file>SettingsLogo.png</file>
+    <file>TrafficAnalysisSystem.png</file>
+    <file>TrafficSituation.png</file>
+    <file>Warning.png</file>
+    <file>WeatherLogo.png</file>
+  </qresource>
+</RCC>

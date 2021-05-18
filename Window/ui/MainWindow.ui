@@ -1,0 +1,4982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AmapProgramForm</class>
+ <widget class="QWidget" name="AmapProgramForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="amapProgramFrame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>180</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="amapProgramVerticalLayout" stretch="1,0,0,0,0,0,0,0,0,0,0,0,0,0">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>30</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="amapProgramHorizontalLayout" stretch="1,2">
+       <item>
+        <widget class="QLabel" name="usersNameLabel">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="usersPhotoLabel">
+         <property name="minimumSize">
+          <size>
+           <width>111</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>默认用户</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="divisionLine4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="basicFunctionLabel">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>基础功能</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="basicFunctionListWidget">
+       <property name="maximumSize">
+        <size>
+         <width>169</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget, QListView, QTreeWidget, QTreeView {
+    outline: 0px;
+}
+
+QListWidget {
+    color: Black;
+    background: #F0F0F0;
+	height:80px;
+	NoFrame
+}
+QListWidget::Item {
+	color: rgb(0,0,0);
+    border-left: 4px solid #F5F5F5;
+	height:35px;
+}
+QListWidget::Item:selected {
+    background: rgb(204,232,255);
+	color: rgb(0,0,0);
+    border-left: 4px solid #2DB5EC;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>路径规划</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/RoutePlanningLogo.png</normaloff>../../Resources/Icon/RoutePlanningLogo.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>静态地图</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/Maps.png</normaloff>../../Resources/Icon/Maps.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="divisionLine1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="searchServiceLabel">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>查询服务</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="searchServiceListWidget">
+       <property name="maximumSize">
+        <size>
+         <width>169</width>
+         <height>115</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget, QListView, QTreeWidget, QTreeView {
+    outline: 0px;
+}
+
+QListWidget {
+    color: Black;
+    background: #F0F0F0;
+	height:80px;
+	NoFrame
+}
+QListWidget::Item {
+	color: rgb(0,0,0);
+    border-left: 4px solid #F5F5F5;
+	height:35px;
+}
+QListWidget::Item:selected {
+    background: rgb(204,232,255);
+	color: rgb(0,0,0);
+    border-left: 4px solid #2DB5EC;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>IP地址查询</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/IPLocation.png</normaloff>../../Resources/Icon/IPLocation.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行政区域查询</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/AdministrativeDistrict.png</normaloff>../../Resources/Icon/AdministrativeDistrict.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>天气查询</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/WeatherLogo.png</normaloff>../../Resources/Icon/WeatherLogo.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="divisionLine2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="advancedFunction">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>高级功能</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="advancedFunctionListWidget">
+       <property name="maximumSize">
+        <size>
+         <width>169</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget, QListView, QTreeWidget, QTreeView {
+    outline: 0px;
+}
+
+QListWidget {
+    color: Black;
+    background: #F0F0F0;
+	height:80px;
+	NoFrame
+}
+QListWidget::Item {
+	color: rgb(0,0,0);
+    border-left: 4px solid #F5F5F5;
+	height:35px;
+}
+QListWidget::Item:selected {
+    background: rgb(204,232,255);
+	color: rgb(0,0,0);
+    border-left: 4px solid #2DB5EC;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>交通态势</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/TrafficSituation.png</normaloff>../../Resources/Icon/TrafficSituation.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>交通态势分析系统</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/TrafficAnalysisSystem.png</normaloff>../../Resources/Icon/TrafficAnalysisSystem.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="divisionLine3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="otherOptionsLabel">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>其他选项</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="otherOptionsListWidget">
+       <property name="maximumSize">
+        <size>
+         <width>169</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QListWidget, QListView, QTreeWidget, QTreeView {
+    outline: 0px;
+}
+
+QListWidget {
+    color: Black;
+    background: #F0F0F0;
+	height:80px;
+	NoFrame
+}
+QListWidget::Item {
+	color: rgb(0,0,0);
+    border-left: 4px solid #F5F5F5;
+	height:35px;
+}
+QListWidget::Item:selected {
+    background: rgb(204,232,255);
+	color: rgb(0,0,0);
+    border-left: 4px solid #2DB5EC;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>设置</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/SettingsLogo.png</normaloff>../../Resources/Icon/SettingsLogo.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>关于</string>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑 Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Resources/Icon/About.png</normaloff>../../Resources/Icon/About.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>104</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="amapProgramStackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>1100</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="routePlanningPage">
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>1090</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayoutPage1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="RoutePlanningTabPage">
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="walkingRoutePlanningTab">
+          <attribute name="title">
+           <string>步行路径规划</string>
+          </attribute>
+          <widget class="QWidget" name="horizontalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1071</width>
+             <height>691</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="walkingHorizontal1" stretch="2,0,1">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="walkingVertical1">
+              <item>
+               <widget class="QLabel" name="walkingRoutePlanningLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>步行路径规划</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="walkingSearchResultContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>查询结果说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="walkingSearchInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>步行路径规划可以为您规划100KM以内的步行通勤方案，并提供相应方案的步行路径规划和实时路线图。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="walingRoutePlanningLine1">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="walkingHorizontal2" stretch="3,1">
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="walkingVertical2">
+                  <item>
+                   <layout class="QHBoxLayout" name="walkingHorizontal3">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="walkingDepartureLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>出发地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="walkingDepartureLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入起点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="walkingHorizontal4">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="walkingDestinationLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>目的地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="walkingDestinationLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入终点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="walkingSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="walingRoutePlanningLine2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="walkingResultTextEdit">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+    color: Black;
+    background: #FFFFFF;
+    NoFrame;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="walingRoutePlanningLine5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="walkingVertical3">
+              <item>
+               <widget class="QLabel" name="walkingRoutePlanningInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>步行路径规划说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="walkingRoutePlanningDetailInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>根据用户输入的出发地和目的地，能够快速的帮助用户查询到最优的步行路径的行走路线。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="walingRoutePlanningLine3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="walkingInputContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>输入内容说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="walkingInputInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>搜索的地名（仅支持中国大陆地区）</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="walingRoutePlanningLine4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="walkingHorizontal5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="walkingFeedBackPhotoLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="walkingFeedBackLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="margin">
+                   <number>0</number>
+                  </property>
+                  <property name="openExternalLinks">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="walingRoutePlanningSpacer2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="busRoutePlanningTab">
+          <attribute name="title">
+           <string>公交路径规划</string>
+          </attribute>
+          <widget class="QWidget" name="horizontalLayoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1071</width>
+             <height>691</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="busHorizontal1" stretch="2,0,1">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="busVertical1">
+              <item>
+               <widget class="QLabel" name="busRoutePlanningLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>公交路径规划</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="busSearchResultContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>查询结果说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="busSearchInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>公交路径规划可以为您规划综合各类公共（火车、公交、地铁）交通方式的通勤方案，并提供相应方案的公交路径规划和实时路线图。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="busRoutePlanningLine1">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="busHorizontal2" stretch="3,1">
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="busVertical2">
+                  <item>
+                   <layout class="QHBoxLayout" name="busHorizontal3">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="busDepartureLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>出发地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="busDepartureLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入起点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="busHorizontal4">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="busDestinationLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>目的地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="busDestinationLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入终点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="busSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="busRoutePlanningLine2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="busResultTextEdit">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+    color: Black;
+    background: #FFFFFF;
+    NoFrame;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="busRoutePlanningLine5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="busVertical3">
+              <item>
+               <widget class="QLabel" name="busRoutePlanningInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>公交路径规划说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="busRoutePlanningDetailInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>根据用户输入的出发地和目的地，能够快速的帮助用户查询到最优的公交路径的出行路线。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="busRoutePlanningLine3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="busInputContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>输入内容说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="busInputInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>搜索的地名（仅支持中国大陆地区）</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="busRoutePlanningLine4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="busHorizontal5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="busFeedBackPhotoLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="busFeedBackLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="margin">
+                   <number>0</number>
+                  </property>
+                  <property name="openExternalLinks">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="busRoutePlanningSpacer2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="rideRoutePlanningTab">
+          <attribute name="title">
+           <string>骑行路径规划</string>
+          </attribute>
+          <widget class="QWidget" name="horizontalLayoutWidget_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1071</width>
+             <height>691</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="rideHorizontal1" stretch="2,0,1">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="rideVertical1">
+              <item>
+               <widget class="QLabel" name="rideRoutePlanningLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>骑行路径规划</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="rideSearchResultContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>查询结果说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="rideSearchInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>骑行路径规划可以为您规划骑行通勤方案，并提供相应方案的骑行路径规划和实时路线图。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="rideRoutePlanningLine1">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="rideHorizontal2" stretch="3,1">
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="rideVertical2">
+                  <item>
+                   <layout class="QHBoxLayout" name="rideHorizontal3">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="rideDepartureLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>出发地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="rideDepartureLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入起点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="rideHorizontal4">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="rideDestinationLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>目的地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="rideDestinationLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入终点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="rideSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="rideRoutePlanningLine2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="rideResultTextEdit">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+    color: Black;
+    background: #FFFFFF;
+    NoFrame;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="rideRoutePlanningLine5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="rideVertical3">
+              <item>
+               <widget class="QLabel" name="rideRoutePlanningInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>骑行路径规划说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="rideRoutePlanningDetailInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>根据用户输入的出发地和目的地，能够快速的帮助用户查询到最优的骑行路径的出行路线。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="rideRoutePlanningLine3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="rideInputContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>输入内容说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="rideInputInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>搜索的地名（仅支持中国大陆地区）</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="rideRoutePlanningLine4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="rideHorizontal5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="rideFeedBackPhotoLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="rideFeedBackLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="margin">
+                   <number>0</number>
+                  </property>
+                  <property name="openExternalLinks">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="rideRoutePlanningSpacer2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="driveRoutePlanningTab">
+          <attribute name="title">
+           <string>驾车路径规划</string>
+          </attribute>
+          <widget class="QWidget" name="horizontalLayoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1071</width>
+             <height>691</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="driveHorizontal1" stretch="2,0,1">
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="driveVertical1">
+              <item>
+               <widget class="QLabel" name="driveRoutePlanningLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑</family>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>驾车路径规划</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="driveSearchResultContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>查询结果说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="driveSearchInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>驾车路径规划可以为您规划小客车、轿车通勤出行的方案，并提供相应方案的驾车路径规划和实时路线图。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="driveRoutePlanningLine1">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="driveHorizontal2" stretch="3,1">
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="driveVertical2">
+                  <item>
+                   <layout class="QHBoxLayout" name="driveHorizontal3">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="driveDepartureLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>出发地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="driveDepartureLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入起点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="driveHorizontal4">
+                    <property name="leftMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>10</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="driveDestinationLabel">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>目的地:</string>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="dirveDestinationLineEdit">
+                      <property name="font">
+                       <font>
+                        <family>微软雅黑 Light</family>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="placeholderText">
+                       <string>输入终点</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="driveSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="driveRoutePlanningLine2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="driveResultTextEdit">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QTextEdit{
+    color: Black;
+    background: #FFFFFF;
+    NoFrame;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="driveRoutePlanningLine5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="driveVertical3">
+              <item>
+               <widget class="QLabel" name="driveRoutePlanningInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>驾车路径规划说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="driveRoutePlanningDetailInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>根据用户输入的出发地和目的地，能够快速的帮助用户查询到最优的驾车路径的出行路线。</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="driveRoutePlanningLine3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="driveInputContextLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>输入内容说明</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="driveInputInformationLabel">
+                <property name="font">
+                 <font>
+                  <family>微软雅黑 Light</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>搜索的地名（仅支持中国大陆地区）</string>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="driveRoutePlanningLine4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="driveHorizontal5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="driveFeedBackPhotoLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="driveFeedBackLabel">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="margin">
+                   <number>0</number>
+                  </property>
+                  <property name="openExternalLinks">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="driveRoutePlanningSpacer2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="IPLocationPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="IPLocationHorizontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="IPLocationLine6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="IPLocationVertical1">
+         <item>
+          <widget class="QLabel" name="IPLocationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>IP地址查询</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="IPLocationSearchResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>查询结果说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="IPLocationSearchInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.若为直辖市则直接显示直辖市名称
+2.如果在局域网IP网段内，则显示您当前的网络位于局域网
+3.非法IP以及国外的IP地址则显示查询失败</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="IPLocationLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="IPLocationHorizontal2" stretch="0,3,0,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="IPLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>IP地址</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="IPLocationLineEdit">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>请输入IP地址或者域名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="IPLocationGetLocalNetWorkButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>获取当前网络IP地址</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="IPLocationSearchButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="IPLocationVertical2">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QTextEdit" name="IPLocationResultTextEdit">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="IPLocationLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="IPLocationLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="IPLocationVertical3">
+         <item>
+          <widget class="QLabel" name="IPLocationInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>IP地址查询说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="IPLocationDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户输入的IP地址，能够快速的帮助用户定位IP地址所在的位置</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="IPLocationLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="IPLocationInputContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>输入内容说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="IPLocationInputInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.可以通过输入框搜索相应的IP地址（仅支持中国大陆地区）
+2.点击获取当前网络IP地址查询当前网络IP信息
+3.若用户不填写IP地址，则取客户HTTP之中的请求来进行定位</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="IPLocationLine4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="IPLocationHorizontal3">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="IPLocationFeedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="IPLocationFeedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="IPLocationSpacer2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="staticMapsPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="staticMapsHorziontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="staticMapsLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="staticMapsVertical1">
+         <item>
+          <widget class="QLabel" name="staticMapsLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>静态地图</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="staticMapsSearchResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>查询结果说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="staticMapsSearchInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户输入的城市名称，显示相应的实时地图图片（数据来源：高德地图）</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="staticMapsLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="staticMapsHorziontal2" stretch="3,1,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="staticMapsSearchLineEdit">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>请输入要查询的地名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="staticMapsGetLocationButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>定位</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="staticMapsSearchButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="staticMapsPhotoView">
+           <property name="styleSheet">
+            <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="staticMapsLine4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="staticMapsVertical2">
+         <item>
+          <widget class="QLabel" name="staticMapsServiceLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>静态地图服务说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="staticMapsDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户定位或查询的城市，能够快速的帮助用户展现更加直观的区域信息</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="staticMapsLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="staticMapsSearchContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>输入内容说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="staticMapsInputInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.搜索的地名（仅支持中国大陆地区）
+2.可以通过定位直接获取相应的地理位置信息</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="staticMapsLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="staticMapsHorziontal3">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="feedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="feedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="staticMapsSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="administrativeDistrictEnquiryPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="administrativeHorziontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="administrativeLine6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="administrativeVertical1">
+         <item>
+          <widget class="QLabel" name="administrativeDistrictEnquiryLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>行政区域查询</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="administartiveSearchResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>查询结果说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="administrativeSearchInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户选择的内容，搜索相应行政区域的子行政区域的具体信息</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="administartiveLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="administrativeHorziontal2" stretch="2,1,1,1,0">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="administrativeLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>请选择行政区域(省、市、县都可选)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="provinceComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cityComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="countyComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="administrativeSearchButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="administrativeHorziontal3" stretch="3,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="subDistrictNumLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>下级行政区数</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="subDistrictNumComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="modelColumn">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>不返回下级行政区</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>返回下一级行政区</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>返回下两级行政区</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>返回下三级行政区</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="administartiveLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="administrativeResultTextEdit">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="administrativeLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="administrativeVertical2">
+         <item>
+          <widget class="QLabel" name="administrativeServiceLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>行政区域查询服务说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="administrativeDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户输入的搜索条件可以帮助用户快速的查找特定的行政区域信息</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="administrativeLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="administrativeInputContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>选择内容说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="administrativeInputInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.可以通过选择框选择要搜索的行政区域，行政区域级别
+2.行政区域等级（由高到低排列）：省、市、区/县、乡镇/街道</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="administrativeLine4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="administrativeHorziontal4">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="administrativeFeedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="administrativeFeedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="administrativeSpacer2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="weatherInformationPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="weatherHorziontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="weatherLine6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="weatherVertical1">
+         <item>
+          <widget class="QLabel" name="weatherLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>天气查询</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weatherSearchResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>查询结果说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weatherSearchInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.实况天气查询：实况天气每小时更新多次
+2.预报天气查询：预报天气每天更新3次，分别在8点、11点、18点左右更新。预报天气包括当天、第二天、第三天的预报数据</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="weatherLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="weatherHorizontal3" stretch="3,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="weatherSearchLineEdit">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>请输入要查询的城市</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="weatherSearchButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查询</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="weatherLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="weatherResultTextEdit">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="weatherLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="weatherVertical2">
+         <item>
+          <widget class="QLabel" name="weatherInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>天气查询服务说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weatherDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户输入的城市，能够快速的帮助用户查询所在城市的天气状况</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="weatherLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weatherInputContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>输入内容说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="weatherInputInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.可以通过选择框选择要搜索的天气类型：实况天气、预报天气
+2.搜索的城市（仅支持国内）</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="weatherLine4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="weatherHorizontal4">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="weatherFeedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="weatherFeedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="weatherSpacer2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="trafficSituationPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="trafficSituationHorziontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="trafficSituationLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="trafficSituationVertical1">
+         <item>
+          <widget class="QLabel" name="trafficSituationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>交通态势查询</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationSearchResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>查询结果说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationSearchInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>实时查询指定道路或区域的实时拥堵情况和拥堵趋势（默认显示北京市长安大街）</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationHorziontal3" stretch="1,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="trafficSituationSearchModeLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查询方式</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="trafficRoadRealSituationComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>道路实时路况</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>矩形区域实时路况</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>多边形区域实时路况</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>周边实时路况</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="trafficSituationStackedWidget">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="realRoadtrafficSituationPage">
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>701</width>
+               <height>481</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="trafficSituationRealRoadVertical1">
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRealRoadHorziontal1" stretch="2,1,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficRealRoadSelectCityLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>城市列表</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="trafficRealRoadProvinceComboBox">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>请选择省份</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="trafficRealRoadCityComboBox">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>请选择城市</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRealRoadHorziontal2" stretch="3,3,2">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficRealRoadNameLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>道路名称</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trafficSituationRealRoadSearchRoadName">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入要查询的道路名称</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="trafficRealRoadSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRealRoadHorziontal3" stretch="2,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QGraphicsView" name="trafficRealReadRoadPhotoView">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="trafficSituationRealRoadTextEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="rectangleRoadtrafficSituationPage">
+            <widget class="QWidget" name="verticalLayoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>701</width>
+               <height>481</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="trafficSituationRectangleRoadVertical1">
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRectangleRoadHorziontal1" stretch="6,2,2">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficRectangleRoadSearchPositionNameLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>请输入要查询的两个地点名称（相隔距离不超过2KM）</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trafficRectangleRoadSearchPositionLineEdit1">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trafficRectangleRoadSearchPositionLineEdit2">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRectangleRoadHorziontal2" stretch="6,2,2">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficRectangleRoadLevelLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>道路等级</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="trafficRectangleRoadLevelComboBox">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>请选择道路等级</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>全部驾车道路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>高速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>环路及快速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>主干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>次干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>支干路</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="trafficRectangleRoadLevelSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationRectangleRoadHorziontal3" stretch="2,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QGraphicsView" name="trafficRectangleReadRoadPhotoView">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Sunken</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="trafficRectangleRoadTextEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="polygonRoadtrafficSituationPage">
+            <widget class="QWidget" name="verticalLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>701</width>
+               <height>481</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="trafficSituationPolygonRoadVertical1">
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationPolygonRoadHorziontal1" stretch="1,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficPolygonRoadSearchPositionNameLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>多个距离相近的地名</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trafficPolygonRoadSearchPositionLineEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入多个距离相近的地名进行查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationPolygonRoadHorziontal2" stretch="2,1,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficPolygonRoadLevelLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>道路等级</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="trafficPolygonRoadLevelComboBox">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>请选择道路等级</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>全部驾车道路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>高速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>环路及快速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>主干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>次干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>支干路</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="trafficPolygonRoadLevelSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationPolygonRoadHorziontal3" stretch="2,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QGraphicsView" name="trafficPolygonRoadPhotoView">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="trafficPolygonRoadTextEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="aroundRoadtrafficSituationPage">
+            <widget class="QWidget" name="verticalLayoutWidget_5">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>701</width>
+               <height>481</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="trafficSituationAroundRoadVertical1">
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationAroundRoadHorziontal1" stretch="1,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficAroundRoadSearchPositionNameLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>中心地点名称</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="trafficAroundRoadSearchPositionNameLineEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>请输入要查询的中心地点名称</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationAroundRoadHorziontal2" stretch="2,1,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="trafficAroundRoadLevelLabel">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>道路等级</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="trafficAroundRoadLevelComboBox">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>请选择道路等级</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>全部驾车道路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>高速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>环路及快速路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>主干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>次干路</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>支干路</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="trafficAroundRoadLevelSearchButton">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="trafficSituationAroundRoadHorziontal3" stretch="2,1">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QGraphicsView" name="trafficAroundRoadPhotoView">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="trafficAroundRoadTextEdit">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑 Light</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="trafficSituationLine4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="trafficSituationVertical2">
+         <item>
+          <widget class="QLabel" name="trafficSituationServiceLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>交通态势查询服务说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>根据用户输入的城市，能够快速的帮助用户查询所在城市的天气状况</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+           <property name="openExternalLinks">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationInputContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>输入内容说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationInputInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>1.可以通过选择框选择相应道路名称对应的城市
+2.搜索的道路（仅支持国内主干道路）
+3.输入多个地名时使用分号“;”间隔</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationHorziontal4">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="trafficSituationFeedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="trafficSituationFeedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="trafficSituationSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="trafficSituationAnalysisSystemPage">
+     <widget class="QWidget" name="horizontalLayoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="trafficSituationAnalysisSystemHorizontal1" stretch="0,2,0,1">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="Line" name="trafficSituationAnalysisSystemLine6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="trafficSituationAnalysisSystemVertical1">
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑</family>
+             <pointsize>20</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>山西省道路交通信息分析系统</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemResultContextLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>山西省各地级市路况信息展示（默认展示太原市数据）</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationAnalysisSystemLine1">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationAnalysisSystemHorizontal2" stretch="3,1,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="trafficSituationAnalysisSystemCityListLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>城市列表</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="trafficSituationAnalysisSystemCityComboBox">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>太原市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>大同市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>阳泉市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>长治市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>晋城市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>朔州市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>忻州市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>吕梁市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>晋中市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>临汾市</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>运城市</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="trafficSituationAnalysisSystemSearchButton">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>查看</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationAnalysisSystemLine2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationAnalysisSystemHorizontal3">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="trafficSituationAnalysisSystemAnalysisStateLabel">
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>分析状况</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationAnalysisSystemHorizontal4" stretch="2,1">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QGraphicsView" name="trafficSituationAnalysisSystemPhoto">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QGraphicsView{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="trafficSituationAnalysisSystemTextEdit">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QTextEdit{
+    color: Black;
+    background: #F0F0F0;
+    NoFrame;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="trafficSituationAnalysisSystemLine5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="trafficSituationAnalysisSystemVertical2">
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>山西省道路交通信息分析系统说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemDetailInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>实时采集路网和一些重要路段的车流量数据，然后对这些数据进行人工智能分析，根据分析得到的数据给出一个有参考性的意见。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationAnalysisSystemLine3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemSystemFunctionLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>系统功能说明</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="trafficSituationAnalysisSystemSystemFunctionInformationLabel">
+           <property name="font">
+            <font>
+             <family>微软雅黑 Light</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>通过选择山西省相应的城市列表，为用户简单展示山西省各地级市主要道路的路况信息</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="trafficSituationAnalysisSystemLine4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="trafficSituationAnalysisSystemHorizontal5">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="trafficSituationAnalysisSystemFeedBackPhotoLabel">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="trafficSituationAnalysisSystemFeedBackLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;提供反馈&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="trafficSituationAnalysisSystemSpacer1">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
