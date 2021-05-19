@@ -11,10 +11,13 @@
 
 # 介绍（Introduce）
 运行这个主程序后需要进行登录（未来设计是会进行链接数据库的，但是由于时间的问题，没有进行数据库的开发），以及构建的时候没有添加注册用户的模块，所以复制完文件后默认使用root用户进行登录，进入到主界面。<br>
-登录界面窗口显示<br>
+
 ![LoginMainWindow](https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/LoginMainWindow.png)<br>
-主界面窗口显示<br>
+<p align="center">登录界面窗口显示</p><br>
+
 ![MainWindow](https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/MainWindow.png)<br>
+<p align="center">主界面窗口显示</p><br>
+
 # 注意（Attention）
 
 1.由于在构建应用之初没有对应用的登录进行一个良好的设计，需要将Release中的AmapAccount压缩包里面的Account文件夹复制到%localAppdata%目录下。<br>
