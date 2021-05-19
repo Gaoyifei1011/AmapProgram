@@ -34,6 +34,7 @@ Jetbarins Pycharm 2021.1 + Python3.9
 
 ### 第三方库
 源代码运行程序前必须要安装Python的第三方库依赖(安装第三方库建议使用国内的镜像源，用以加快速度)<br>
+```bash
 pip install apscheduler<br>
 pip install inspect<br>
 pip install requests<br>
@@ -49,6 +50,7 @@ pip install xlutils<br>
 pip install loguru<br>
 pip install pathlib<br>
 pip install pyqtchart<br>
+```
 这些第三方库是我目前已经了解到的必须会使用到的第三方库，可能有一部分库没有使用到，建议根据运行程序出现错误的原因网上搜索对应的第三方库的安装，就可以顺利运行了。<br>
 
 # 注意（Attention）
