@@ -11,11 +11,10 @@
 
 # 介绍（Introduce）
 运行这个主程序后需要进行登录（未来设计是会进行链接数据库的，但是由于时间的问题，没有进行数据库的开发），以及构建的时候没有添加注册用户的模块，所以复制完文件后默认使用root用户进行登录，进入到主界面。<br>
-
-![LoginMainWindow](https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/LoginMainWindow.png)<br>
+<div align=center><img src="https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/LoginMainWindow.png"/></div>
 <p align="center">登录界面窗口显示</p><br>
 
-![MainWindow](https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/MainWindow.png)<br>
+<div align=center><img src="https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/MainWindow.png"/></div>
 <p align="center">主界面窗口显示</p><br>
 
 # 注意（Attention）
