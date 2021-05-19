@@ -7,7 +7,7 @@
 
 **AmapProgram**项目是一个基于高德地图Web API实现的一个可视化的小程序。前端使用Python PyQt5框架实现，后台基于高德地图的Web API。已经在Windows 10平台上良好运行。<br>
 
-这个项目是为了完成我的毕业设计所用的。且由于我是一个初学者，Python学习的深度并没有那么深厚，所以代码中可能存在一些混乱，命名规则没有遵守工程化，请大家多多包涵。<br>
+这个项目是为了完成我的毕业设计所用的。且由于我是一个初学者，Python学习的深度并没有那么深厚，所以代码中可能存在一些混乱，命名规则没有遵守工程化，请大家多多包涵。
 
 # 介绍（Introduce）
 
@@ -29,29 +29,29 @@
 ## 程序开发运行环境
 
 ### 开发环境
-Windows 10 Build 21382(Dev Channel)
+Windows 10 Build 21382(Dev Channel)<br>
 Jetbarins Pycharm 2021.1 + Python3.9
 
 ### 第三方库
 源代码运行程序前必须要安装Python的第三方库依赖(安装第三方库建议使用国内的镜像源，用以加快速度)<br>
 ```bash
-pip install apscheduler<br>
-pip install inspect<br>
-pip install requests<br>
-pip install urllib.request<br>
-pip install pillow<br>
-pip install PyQt5<br>
-pip install numpy<br>
-pip install pandas<br> 
-pip install matplotlib<br>
-pip install xlrd<br>
-pip install xlwt<br>
-pip install xlutils<br>
-pip install loguru<br>
-pip install pathlib<br>
-pip install pyqtchart<br>
+pip install apscheduler
+pip install inspect
+pip install requests
+pip install urllib.request
+pip install pillow
+pip install PyQt5
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install xlrd
+pip install xlwt
+pip install xlutils
+pip install loguru
+pip install pathlib
+pip install pyqtchart
 ```
-这些第三方库是我目前已经了解到的必须会使用到的第三方库，可能有一部分库没有使用到，建议根据运行程序出现错误的原因网上搜索对应的第三方库的安装，就可以顺利运行了。<br>
+这些第三方库是我目前已经了解到的必须会使用到的第三方库，可能有一部分库没有使用到，建议根据运行程序出现错误的原因网上搜索对应的第三方库的安装，就可以顺利运行了。
 
 # 注意（Attention）
 
