@@ -15,7 +15,7 @@
 
 ### 程序打开方式
 目前提供了已经编译好的预览版的直接运行文件，当然你也可以自己克隆代码使用Python运行<br>
-1.使用release里面已经打包好的的AmapProgram.exe点击打开<br>
+1.下载并运行[release](https://github.com/Gaoyifei1011/AmapProgram/releases)目录里面已经打包好的的AmapProgram.exe<br>
 2.使用python运行源代码里面的main.py
 
 ### 程序主界面 
@@ -37,19 +37,19 @@ Jetbarins Pycharm 2021.1 + Python3.9
 ```bash
 pip install apscheduler
 pip install inspect
-pip install requests
-pip install urllib.request
-pip install pillow
-pip install PyQt5
+pip install loguru
+pip install matplotlib
 pip install numpy
 pip install pandas
-pip install matplotlib
-pip install xlrd
-pip install xlwt
-pip install xlutils
-pip install loguru
 pip install pathlib
+pip install pillow
+pip install PyQt5
 pip install pyqtchart
+pip install requests
+pip install urllib.request
+pip install xlrd
+pip install xlutils
+pip install xlwt
 ```
 这些第三方库是我目前已经了解到的必须会使用到的第三方库，可能有一部分库没有使用到，建议根据运行程序出现错误的原因网上搜索对应的第三方库的安装，就可以顺利运行了。
 
