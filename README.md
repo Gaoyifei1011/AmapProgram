@@ -15,8 +15,12 @@
 
 #### 程序打开方式（Program Opening Ways）
 目前提供了已经编译好的预览版的直接运行文件，当然你也可以自己克隆代码使用Python运行<br>
-1.下载并运行[Release](https://github.com/Gaoyifei1011/AmapProgram/releases)目录里面已经打包好的的AmapProgram.exe<br>
-2.使用python运行源代码里面的main.py，需要自己在[高德开放平台](https://lbs.amap.com/)和[百度地图开放平台](https://lbsyun.baidu.com/)申请自己所需要的Key,找到代码中的APIKey属性和sk属性对应的值进行替换，具体申请步骤请自行查询。
+1.下载并运行[Release](https://github.com/Gaoyifei1011/AmapProgram/releases)目录里面已经打包好的的AmapProgram.exe。<br>
+2.使用python运行源代码里面的main.py，需要自己在[高德开放平台](https://lbs.amap.com/)和[百度地图开放平台](https://lbsyun.baidu.com/)申请自己所需要的Key,找到代码中的APIKey属性和sk属性对应的值进行替换，具体申请步骤请自行查询。<br>
+在AmapProgram目录下打开cmd或powershell，输入以下内容（确保电脑已经安装Python3和必备的第三方库）：
+```bash
+python main.py
+```
 
 #### 程序主界面（Program Main Interface）
 运行这个主程序后需要进行登录（未来设计是会进行链接数据库的，但是由于时间的问题，没有进行数据库的开发），以及构建的时候没有添加注册用户的模块，所以复制完文件后默认使用root用户进行登录，进入到主界面。<br>
