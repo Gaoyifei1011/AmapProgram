@@ -1,6 +1,6 @@
 
-# AmapProgram
-使用高德地图Web API制作的小程序。
+# <p align="center">AmapProgram</p>
+<p align="center">使用高德地图Web API制作的小程序</p>
 
 
 # 关于（About）
