@@ -24,7 +24,7 @@
 <p align="center">登录界面窗口显示</p><br>
 
 <div align=center><img src="https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/MainWindow.png"/></div>
-<p align="center">主界面窗口显示</p><br>
+<p align="center">主界面窗口显示</p>
 
 ### 程序开发运行环境
 
@@ -33,7 +33,7 @@ Windows 10 Build 21382(Dev Channel)
 Jetbarins Pycharm 2021.1 + Python3.9
 
 第三方库
-源代码运行程序前必须要安装Python的第三方库依赖(安装第三方库建议使用国内的镜像源，用以加快速度)
+源代码运行程序前必须要安装Python的第三方库依赖(安装第三方库建议使用国内的镜像源，用以加快速度)<br>
 pip install apscheduler<br>
 pip install inspect<br>
 pip install requests<br>
