@@ -23,7 +23,7 @@ python main.py
 ```
 
 #### 程序主界面（Program Main Interface）
-运行这个主程序后需要进行登录（未来设计是会进行链接数据库的，但是由于时间的问题，没有进行数据库的开发），以及构建的时候没有添加注册用户的模块，所以复制完文件后默认使用root用户进行登录，进入到主界面。<br>
+运行这个主程序后需要进行登录（未来设计是会进行链接数据库的，但是由于时间的问题，没有进行数据库的开发），以及设计应用的时候没有添加注册用户的模块，所以复制完文件后默认使用root用户进行登录，进入到主界面。<br>
 <div align=center><img alt="LoginMainWindow" src="https://github.com/Gaoyifei1011/AmapProgram/blob/main/ScreenShots/LoginMainWindow.png"/></div>
 <p align="center">登录界面窗口显示</p><br>
 
@@ -33,8 +33,9 @@ python main.py
 ### 程序开发运行环境（Program Development and Runtime Environment）
 
 #### 开发环境（Development Environment）
-Windows 10 Build 21382(Dev Channel)<br>
-Jetbarins Pycharm 2021.1 + Python3.9
+Windows 10 Build 21382(Dev Channel) / Windows 10 Build 19041(Stable Channel)<br>
+Jetbarins Pycharm 2021.1 + (Python3.9 / Python 3.8 / Python 3.7)<br>
+默认推荐使用Windows 10 19041和Python3.9版本。
 
 #### 第三方库（Third-party Libraries）
 源代码运行程序前必须要安装Python的第三方库依赖(安装第三方库建议使用国内的镜像源，用以加快速度)<br>
